@@ -1,11 +1,20 @@
 import streamlit as st
+<<<<<<< HEAD
+=======
+import tensorflow as tf
+import keras
+>>>>>>> 9427406db3c9d0f61c3d58c8f38979c28fe5e32c
 import numpy as np
 import matplotlib.pyplot as plt
 from PIL import Image
 import joblib
 import pandas as pd
 
+<<<<<<< HEAD
 model = joblib.load("Fruit_image_Classifier.pkl")
+=======
+model = tf.keras.models.load_model("Fruit_image_Classifier.h5")
+>>>>>>> 9427406db3c9d0f61c3d58c8f38979c28fe5e32c
 fruit_classes = ["Apple", "Banana", "Avocado", "Cherry", "Kiwi", "Mango", "Orange", "Pineapple", "Strawberry", "Watermelon"]
 
 
