@@ -1,5 +1,5 @@
 import streamlit as st
-import tensorflow
+import tensorflow as tf
 import keras
 import numpy as np
 import matplotlib.pyplot as plt
@@ -7,7 +7,7 @@ from PIL import Image
 import joblib
 import pandas as pd
 
-model = tensorflow.keras.models.load_model("Fruit_image_Classifier.h5")
+model = tf.keras.models.load_model("Fruit_image_Classifier.h5")
 fruit_classes = ["Apple", "Banana", "Avocado", "Cherry", "Kiwi", "Mango", "Orange", "Pineapple", "Strawberry", "Watermelon"]
 
 
